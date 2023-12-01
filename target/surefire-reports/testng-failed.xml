@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test name="CreateFirm(failed)">
+    <classes>
+      <class name="com.leasecrunch.testscases.CreateFirm">
+        <methods>
+          <include name="createFirm" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10"/>
+          <include name="aftertest"/>
+        </methods>
+      </class> <!-- com.leasecrunch.testscases.CreateFirm -->
+    </classes>
+  </test> <!-- CreateFirm(failed) -->
+  <test name="DisableFirm(failed)">
+    <classes>
+      <class name="com.leasecrunch.testscases.DisableFirm">
+        <methods>
+          <include name="beforetest"/>
+          <include name="disableFirm"/>
+          <include name="aftertest"/>
+        </methods>
+      </class> <!-- com.leasecrunch.testscases.DisableFirm -->
+    </classes>
+  </test> <!-- DisableFirm(failed) -->
+</suite> <!-- Failed suite [Suite] -->
