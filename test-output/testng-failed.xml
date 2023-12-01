@@ -5,7 +5,7 @@
     <classes>
       <class name="com.leasecrunch.testscases.CreateFirm">
         <methods>
-          <include name="createFirm" invocation-numbers="0 1 2"/>
+          <include name="createFirm"/>
           <include name="aftertest"/>
           <include name="beforetest"/>
         </methods>
