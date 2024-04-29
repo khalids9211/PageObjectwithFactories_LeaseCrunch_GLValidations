@@ -23,7 +23,7 @@ public class CreateFirm {
 
 	@Test()
 	public void createFirm() throws InterruptedException {
-
+		// comments added just for testing purposes
 		LoginPage lp = new LoginPage();
 
 		lp.loginwithSysAdmin("shah@xdsol.com");
