@@ -13,24 +13,25 @@ public class DisableFirm {
 		LoginPage lp = new LoginPage();
 		lp.loginwithSysAdmin("shah@xdsol.com");
 		lp.continue_btn();
-		// Page.quitBrowser();
 		
+		  // Page.quitBrowser();
+
 			FirmPage fp = new FirmPage();
 
 			fp.searchFirm("Firm1");
 			Thread.sleep(2000);
 			for (int i = 1; i < 5; i++) {
-			fp.editFirm();
+				fp.editFirm();
 
-			Thread.sleep(3000);
-			fp.disableFirm();
-			fp.save_firm();
-			HomePage hp= new HomePage();
-			Thread.sleep(10000);
-			hp.Signout();
-			Page.quitBrowser();
-		}
-
+				Thread.sleep(3000);
+				fp.disableFirm();
+				fp.save_firm();
+				HomePage hp = new HomePage();
+				Thread.sleep(10000);
+				hp.Signout();
+				Page.quitBrowser();
+			}
+		 
 	}
 
 }

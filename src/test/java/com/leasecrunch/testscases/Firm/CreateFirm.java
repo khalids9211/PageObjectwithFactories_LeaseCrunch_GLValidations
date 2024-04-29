@@ -1,4 +1,4 @@
-package com.leasecrunch.testscases;
+package com.leasecrunch.testscases.Firm;
 
 import java.util.Hashtable;
 
@@ -20,33 +20,22 @@ public class CreateFirm {
 	public void beforetest() {
 		Page.initConfig();
 	}
-	   
 
-	@Test(dataProviderClass = Utility.class, dataProvider = "dp")
-	public void createFirm(Hashtable<String, String> data) throws InterruptedException {
-		
-		if (data.get("runmode").equalsIgnoreCase("N")) {
+	@Test()
+	public void createFirm() throws InterruptedException {
 
-			throw new SkipException("Skipping the Test as Runmode set to N");
-		}
-		Page.initConfig();
 		LoginPage lp = new LoginPage();
-		
-		
-		
-		  System.out.println(data.get("username"));
-		  System.out.println(data.get("Name"));
-		 
-		 
-		lp.loginwithSysAdmin(data.get("username"));
+
+		lp.loginwithSysAdmin("shah@xdsol.com");
 		lp.continue_btn();
 		Thread.sleep(3000);
 		FirmPage fp = new FirmPage();
 		fp.addFirm();
 		Thread.sleep(3000);
-		fp.newFirm(data);
+		fp.newFirm();
+
 		fp.save_firm();
-		ErrorCollector.verifyEquals(false, false);
+
 		/*
 		 * HomePage hp= new HomePage();
 		 * 
@@ -58,7 +47,7 @@ public class CreateFirm {
 	@AfterTest
 	public void aftertest() {
 		if (Page.driver != null) {
-		Page.quitBrowser();
+			 Page.quitBrowser();
 		}
 	}
 

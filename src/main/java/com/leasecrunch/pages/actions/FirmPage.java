@@ -1,6 +1,7 @@
 package com.leasecrunch.pages.actions;
 
 import java.util.Hashtable;
+import java.util.Random;
 
 import org.openqa.selenium.support.PageFactory;
 
@@ -38,28 +39,66 @@ public class FirmPage extends Page {
 		click(fpl.edit);
 	}
 	
+	
 	public void disableFirm() {
 		
 		click(fpl.disabled);
 	}
 	
-	public void newFirm(Hashtable<String, String> data) {
+	public void enableFirm() {
 		
+		click(fpl.enabled);
+	}
+	public void includedisableradiobtn() {
 		
+		click(fpl.firm_includeDisable);
+	}
+	public void newFirm() {
+		
+		 Random random = new Random();
+		 String name = "Firm"+random.nextInt();
+		 
+		 System.out.println(name);
 		
 		//fpl.firmname.sendKeys(name);
-		type(fpl.firmname,data.get("Name"));
+		type(fpl.firmname,name);
 	//fpl.contractType.sendKeys(contractType);
-		type(fpl.contractType, data.get("CotractType"));
+		type(fpl.contractType, "Committed");
 		//fpl.contractPricing.sendKeys(contractpricing);
-		type(fpl.contractPricing,  data.get("ContractPricing"));
+		type(fpl.contractPricing,  "$30");
 		
 		
 	}
 	
+	public void editFirmname() {
+		Random random = new Random();
+		 String name = "Firm"+random.nextInt();
+		type(fpl.firmname, name);
+		
+	}
+	public void editFirmContracttype() {
+		type(fpl.contractType, "Pay-as-you-go");
+	}
 	public void save_firm() {
 		
 		click(fpl.save_btn);
 	}
 
+	public void searchfirm(String search) {
+		
+		type(fpl.firm_search,search);
+	}
+	
+	public String firmsearchresult() {
+		
+	String	results=fpl.searchresult.getText();
+	System.out.println(results);
+	return results;
+	
+	}
+	
+	public void clickonFirm() {
+		
+		click(fpl.clickonFirmlink);
+	}
 }

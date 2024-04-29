@@ -15,6 +15,26 @@ public class FirmPageLocator {
 	@FindBy(xpath="//*[@id=\"ExportExcel\"]")
 	public WebElement exportxls_btn;
 
+	@FindBy(xpath="//input[@id='filterInput']")
+	public WebElement firm_search;
+	
+	@FindBy(xpath="//input[@id='includeDisabledFirms']")
+	public WebElement firm_includeDisable;
+	
+	@FindBy(xpath="//tbody/tr[1]/td[1]")
+	public WebElement searchresult;
+	
+	@FindBy(xpath="//*[@id=\"FirmList\"]/tbody/tr[1]/td[6]/i")
+	public WebElement edit;
+	
+	@FindBy(xpath="//*[@id=\"FirmList\"]/tbody/tr[1]/td[1]/a")
+	public WebElement clickonFirmlink;
+	
+	@FindBy(xpath="//*[@id=\"firmDisabled\"]/div/div/label[2]")
+	public WebElement disabled;
+	
+	@FindBy(xpath="//label[normalize-space()='Enabled']")
+	public WebElement enabled;
 	
 	// locators for add firm
 	
@@ -36,11 +56,8 @@ public class FirmPageLocator {
 	@FindBy(xpath="//*[@id=\"addFirmModalFormCancel\"]")
 	public WebElement cancel_btn;
 
-	@FindBy(xpath="//*[@id=\"FirmList\"]/tbody/tr[1]/td[6]/i")
-	public WebElement edit;
+	
 
-	@FindBy(xpath="//*[@id=\"firmDisabled\"]/div/div/label[2]")
-	public WebElement disabled;
-
+	
 	
 }

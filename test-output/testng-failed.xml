@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.leasecrunch.testscases.CreateFirm">
+      <class name="com.leasecrunch.testcases.Clients.CreateClientFASBLCVtoFirmtoBill">
         <methods>
-          <include name="createFirm"/>
           <include name="aftertest"/>
           <include name="beforetest"/>
+          <include name="createFASBClientLCVtoFirmtoBill"/>
         </methods>
-      </class> <!-- com.leasecrunch.testscases.CreateFirm -->
+      </class> <!-- com.leasecrunch.testcases.Clients.CreateClientFASBLCVtoFirmtoBill -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

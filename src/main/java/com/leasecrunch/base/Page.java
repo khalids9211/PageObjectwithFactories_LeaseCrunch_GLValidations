@@ -48,8 +48,10 @@ public class Page {
 
 		if (Constants.browser.equals("chrome")) {
 
-			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
+			/*
+			 * System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
+			 * + "\\src\\test\\resources\\executables\\chromedriver.exe");
+			 */
 
 			String userprofilepath = "C:\\Users\\SHAHKH~1\\AppData\\Local\\Google\\Chrome\\User\\Default";
 			Map<String, Object> prefs = new HashMap<String, Object>();

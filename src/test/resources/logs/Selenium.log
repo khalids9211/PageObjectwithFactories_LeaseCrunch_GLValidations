@@ -1,0 +1,8 @@
+11:33:50,891 DEBUG devpinoyLogger:69 - Launching Chrome browser
+11:33:53,833 DEBUG devpinoyLogger:113 - Typing in an Element : [[ChromeDriver: chrome on windows (7b962f06f48986f6b18aebfd791002d5)] -> xpath: //*[@id="username"]] entered value as : shah@xdsol.com
+11:34:19,084 DEBUG devpinoyLogger:98 - Clicking on an Element : Proxy element for: DefaultElementLocator 'By.xpath: /html/body/div/div[1]/div/div/div/div/div/div/form/button'
+11:34:22,163 DEBUG devpinoyLogger:98 - Clicking on an Element : [[ChromeDriver: chrome on windows (7b962f06f48986f6b18aebfd791002d5)] -> xpath: //*[@id="addFirmButton"]]
+11:34:25,244 DEBUG devpinoyLogger:113 - Typing in an Element : [[ChromeDriver: chrome on windows (7b962f06f48986f6b18aebfd791002d5)] -> xpath: //*[@id="Name"]] entered value as : Firm1470483238
+11:34:25,314 DEBUG devpinoyLogger:113 - Typing in an Element : [[ChromeDriver: chrome on windows (7b962f06f48986f6b18aebfd791002d5)] -> xpath: //*[@id="ContractType"]] entered value as : Committed
+11:34:25,376 DEBUG devpinoyLogger:113 - Typing in an Element : [[ChromeDriver: chrome on windows (7b962f06f48986f6b18aebfd791002d5)] -> xpath: //*[@id="ContractPricing"]] entered value as : $30
+11:34:25,435 DEBUG devpinoyLogger:98 - Clicking on an Element : [[ChromeDriver: chrome on windows (7b962f06f48986f6b18aebfd791002d5)] -> xpath: //*[@id="addFirmModalFormSave"]]
